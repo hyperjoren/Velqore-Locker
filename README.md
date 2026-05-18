@@ -144,7 +144,7 @@ delfile           - Delete all files of a specific user [FOR ADMINS ONLY]
 ### 🔹 DEPLOY ON KOYEB
 
 <p><br>
-<a href="https://app.koyeb.com/deploy?type=git&repository=github.com/Botsthe/AV-FILE-TO-LINK-PRO&branch=main&name=AV-FILE-TO-LINK-PRO">
+<a href="https://app.koyeb.com/deploy?type=git&repository=github.com/hyperjoren/Velqore-Locker&branch=main&name=AV-FILE-TO-LINK-PRO">
 <img src="https://www.koyeb.com/static/images/deploy/button.svg" alt="DEPLOY ON KOYEB">
 </a></p>
 

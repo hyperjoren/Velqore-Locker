@@ -17,7 +17,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Webavbot')
 API_ID = int(environ.get('API_ID', '34511765'))
 API_HASH = environ.get('API_HASH', '7790bb2b2780b31327ad0ffc22b7557f')
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
+BOT_TOKEN = environ.get('BOT_TOKEN', '8727390795:AAEDy0BQYLrvndK2QHVBT-SIaK69YfEaokE')
 
 # Admin Settings
 ADMINS = [int(x) for x in environ.get('ADMINS', '8561142779').split()]
@@ -26,7 +26,7 @@ OWNER_USERNAME = environ.get("OWNER_USERNAME", 'ishowdrift')
 # =========================================================
 # 🗄️ DATABASE CONNECTION
 # =========================================================
-DB_URL = environ.get('DATABASE_URI', "")
+DB_URL = environ.get('DATABASE_URI', "mongodb+srv://Velqore:Velqore@2026@cluster0.icwpznt.mongodb.net/?appName=Cluster0")
 DB_NAME = environ.get('DATABASE_NAME', "testing")
 
 # =========================================================

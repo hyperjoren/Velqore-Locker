@@ -15,48 +15,48 @@ def is_enabled(value, default):
 # 🤖 BOT INFO & CREDENTIALS
 # =========================================================
 SESSION = environ.get('SESSION', 'Webavbot')
-API_ID = int(environ.get('API_ID', '12000656'))
-API_HASH = environ.get('API_HASH', 'd927c13beaaf5110f2c071273')
-BOT_TOKEN = environ.get('BOT_TOKEN', '70917168:AAF8TzmnNYW721xIUUuseLU41xa5bRA')
+API_ID = int(environ.get('API_ID', '34511765'))
+API_HASH = environ.get('API_HASH', '7790bb2b2780b31327ad0ffc22b7557f')
+BOT_TOKEN = environ.get('BOT_TOKEN', '')
 
 # Admin Settings
-ADMINS = [int(x) for x in environ.get('ADMINS', '5977931010').split()]
-OWNER_USERNAME = environ.get("OWNER_USERNAME", 'BOT_OWNER26')
+ADMINS = [int(x) for x in environ.get('ADMINS', '8561142779').split()]
+OWNER_USERNAME = environ.get("OWNER_USERNAME", 'ishowdrift')
 
 # =========================================================
 # 🗄️ DATABASE CONNECTION
 # =========================================================
-DB_URL = environ.get('DATABASE_URI', "mongodb+srv://teshsjsg1:axxxxtz@testing.kwuyhwka.mongodb.net/?appName=testing")
+DB_URL = environ.get('DATABASE_URI', "")
 DB_NAME = environ.get('DATABASE_NAME', "testing")
 
 # =========================================================
 # 📢 CHANNELS & LOGS
 # =========================================================
 # Mandatory Channels
-BIN_CHANNEL = int(environ.get("BIN_CHANNEL", '-1002114619001'))
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", '-1002114619001'))
+BIN_CHANNEL = int(environ.get("BIN_CHANNEL", '-1003703412578'))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", '-1003703412578'))
 
 # Feature Specific Logs
-PREMIUM_LOGS = int(environ.get("PREMIUM_LOGS", '-1002114619001'))
-VERIFIED_LOG = int(environ.get('VERIFIED_LOG', '-1002114619001'))
-SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", "-1002114619001"))
+PREMIUM_LOGS = int(environ.get("PREMIUM_LOGS", '-1003703412578'))
+VERIFIED_LOG = int(environ.get('VERIFIED_LOG', '-1003703412578'))
+SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", "-1003954028261"))
 
 # Auth Channels (Safe Parsing)
-auth_channel_str = environ.get("AUTH_CHANNEL", "-1002114619001")
+auth_channel_str = environ.get("AUTH_CHANNEL", "-1003401269503")
 AUTH_CHANNEL = [int(x) for x in auth_channel_str.split()] if auth_channel_str else []
 
 # =========================================================
 # 🔗 LINKS & URLS
 # =========================================================
-CHANNEL = environ.get('CHANNEL', 'https://t.me/AV_BOTz_UPDATE')
-SUPPORT = environ.get('SUPPORT', 'https://t.me/AV_SUPPORT_GROUP')
-TUTORIAL_LINK_1 = environ.get('TUTORIAL_LINK_1', 'https://t.me/1')
-TUTORIAL_LINK_2 = environ.get('TUTORIAL_LINK_2', 'https://t.me/2')
+CHANNEL = environ.get('CHANNEL', 'https://t.me/Velqore_Official')
+SUPPORT = environ.get('SUPPORT', 'https://t.me/Velqore_Support')
+TUTORIAL_LINK_1 = environ.get('TUTORIAL_LINK_1', 'https://t.me/Ishowdrift')
+TUTORIAL_LINK_2 = environ.get('TUTORIAL_LINK_2', 'https://t.me/ishowdrift')
 
 # =========================================================
 # 🔐 VERIFICATION & SHORTENER
 # =========================================================
-IS_VERIFY = is_enabled(environ.get("IS_VERIFY", "True"), True)
+IS_VERIFY = is_enabled(environ.get("IS_VERIFY", "False"), True)
 IS_SECOND_VERIFY = is_enabled(environ.get("IS_SECOND_VERIFY", "True"), True)
 IS_SHORTLINK = is_enabled(environ.get('IS_SHORTLINK', "True"), True)
 

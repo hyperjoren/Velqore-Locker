@@ -102,7 +102,7 @@ FILE_CAPTION = environ.get('FILE_CAPTION', script.CAPTION)
 # =========================================================
 WORKERS = int(getenv('WORKERS', '4'))
 MULTI_CLIENT = False
-name = str(environ.get('name', 'velqore'))
+name = str(environ.get('name', 'avbotz'))
 
 # Heroku & Port Config
 if 'DYNO' in environ:
@@ -119,16 +119,17 @@ BIND_ADDRESS = getenv("WEB_SERVER_BIND_ADDRESS", "127.0.0.1")
 
 # URL Generation
 # Use provided URL from env, or generate based on FQDN/IP
-custom_url = environ.get("https://static-jenni-thehyper333-cd10304a.koyeb.app/")
+custom_url = environ.get("URL")
 if custom_url:
     URL = custom_url
 else:
-    FQDN = getenv("static-jenni-thehyper333-cd10304a.koyeb.app/", BIND_ADDRESS)
+    FQDN = getenv("https://static-jenni-thehyper333-cd10304a.koyeb.app/", BIND_ADDRESS)
     PROTOCOL = "https" if HAS_SSL else "http"
     PORT_SEGMENT = "" if NO_PORT else f":{PORT}"
     URL = f"{PROTOCOL}://{FQDN}{PORT_SEGMENT}/"
 
 # Default fallback if nothing works (Matches your provided koyeb link)
-if not URL or URL == "https://static-jenni-thehyper333-cd10304a.koyeb.app/":
+if not URL or URL == "/":
     URL = "https://static-jenni-thehyper333-cd10304a.koyeb.app/"
+    
     

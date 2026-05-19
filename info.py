@@ -123,7 +123,7 @@ custom_url = environ.get("https://static-jenni-thehyper333-cd10304a.koyeb.app/")
 if custom_url:
     URL = custom_url
 else:
-    FQDN = getenv("FQDN", BIND_ADDRESS)
+    FQDN = getenv("static-jenni-thehyper333-cd10304a.koyeb.app/", BIND_ADDRESS)
     PROTOCOL = "https" if HAS_SSL else "http"
     PORT_SEGMENT = "" if NO_PORT else f":{PORT}"
     URL = f"{PROTOCOL}://{FQDN}{PORT_SEGMENT}/"

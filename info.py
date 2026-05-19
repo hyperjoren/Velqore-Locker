@@ -123,7 +123,7 @@ custom_url = environ.get("URL")
 if custom_url:
     URL = custom_url
 else:
-    FQDN = getenv("smart-hesther-thehyper333-a79bbc4c.koyeb.app/", BIND_ADDRESS)
+    FQDN = getenv("smart-hesther-thehyper333-a79bbc4c.koyeb.app/")
     PROTOCOL = "https" if HAS_SSL else "http"
     PORT_SEGMENT = "" if NO_PORT else f":{PORT}"
     URL = f"{PROTOCOL}://{FQDN}{PORT_SEGMENT}/"

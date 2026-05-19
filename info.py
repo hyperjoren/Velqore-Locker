@@ -119,7 +119,7 @@ BIND_ADDRESS = getenv("WEB_SERVER_BIND_ADDRESS", "127.0.0.1")
 
 # URL Generation
 # Use provided URL from env, or generate based on FQDN/IP
-custom_url = environ.get("URL")
+custom_url = environ.get("https://static-jenni-thehyper333-cd10304a.koyeb.app/")
 if custom_url:
     URL = custom_url
 else:
@@ -129,6 +129,6 @@ else:
     URL = f"{PROTOCOL}://{FQDN}{PORT_SEGMENT}/"
 
 # Default fallback if nothing works (Matches your provided koyeb link)
-if not URL or URL == "/":
+if not URL or URL == "https://static-jenni-thehyper333-cd10304a.koyeb.app/":
     URL = "https://static-jenni-thehyper333-cd10304a.koyeb.app/"
     

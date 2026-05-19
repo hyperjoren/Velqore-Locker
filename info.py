@@ -102,7 +102,7 @@ FILE_CAPTION = environ.get('FILE_CAPTION', script.CAPTION)
 # =========================================================
 WORKERS = int(getenv('WORKERS', '4'))
 MULTI_CLIENT = False
-name = str(environ.get('name', 'avbotz'))
+name = str(environ.get('name', 'velqore'))
 
 # Heroku & Port Config
 if 'DYNO' in environ:
@@ -130,5 +130,5 @@ else:
 
 # Default fallback if nothing works (Matches your provided koyeb link)
 if not URL or URL == "/":
-    URL = ""
+    URL = "https://static-jenni-thehyper333-cd10304a.koyeb.app/"
     

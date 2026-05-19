@@ -115,7 +115,7 @@ else:
 PORT = int(getenv('PORT', '2626'))
 NO_PORT = is_enabled(getenv("NO_PORT", "False"), False)
 HAS_SSL = is_enabled(getenv("HAS_SSL", "False"), False)
-BIND_ADDRESS = getenv("WEB_SERVER_BIND_ADDRESS", "smart-hesther-thehyper333-a79bbc4c.koyeb.app/")
+BIND_ADDRESS = getenv("WEB_SERVER_BIND_ADDRESS", "127.0.0.1")
 
 # URL Generation
 # Use provided URL from env, or generate based on FQDN/IP
@@ -123,13 +123,11 @@ custom_url = environ.get("URL")
 if custom_url:
     URL = custom_url
 else:
-    FQDN = getenv("smart-hesther-thehyper333-a79bbc4c.koyeb.app/")
+    FQDN = getenv("smart-hesther-thehyper333-a79bbc4c.koyeb.app/", BIND_ADDRESS)
     PROTOCOL = "https" if HAS_SSL else "http"
     PORT_SEGMENT = "" if NO_PORT else f":{PORT}"
     URL = f"{PROTOCOL}://{FQDN}{PORT_SEGMENT}/"
 
 # Default fallback if nothing works (Matches your provided koyeb link)
 if not URL or URL == "/":
-    URL = "https://smart-hesther-thehyper333-a79bbc4c.koyeb.app/"
-    
-    
+    URL = "https://forward-jolyn-vnnmbs-62200c9e.koyeb.app/"

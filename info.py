@@ -130,5 +130,5 @@ else:
 
 # Default fallback if nothing works (Matches your provided koyeb link)
 if not URL or URL == "/":
-    URL = "https://administrative-marci-thehyper333-7efe8274.koyeb.app/"
+    URL = ""
     

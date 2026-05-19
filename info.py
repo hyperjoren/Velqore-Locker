@@ -26,7 +26,7 @@ OWNER_USERNAME = environ.get("OWNER_USERNAME", 'ishowdrift')
 # =========================================================
 # 🗄️ DATABASE CONNECTION
 # =========================================================
-DB_URL = environ.get('DATABASE_URI', "mongodb+srv://Velqore:Velqore@2026@cluster0.icwpznt.mongodb.net/?appName=Cluster0")
+DB_URL = environ.get('DATABASE_URI', "mongodb+srv://Velqore:Velqore%402026@cluster0.icwpznt.mongodb.net/?appName=Cluster0")
 DB_NAME = environ.get('DATABASE_NAME', "testing")
 
 # =========================================================
